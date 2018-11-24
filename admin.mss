@@ -1,4 +1,5 @@
-@admin-boundaries: #ac46ac;
+@admin-boundaries: #646464;
+@admin-boundaries-low-zoom: #555555;
 
 @admin-simplify: 4;
 @admin-simplify-algorithm: visvalingam-whyatt;
@@ -20,7 +21,7 @@ overlapping borders correctly.
       background/line-simplify: @admin-simplify;
       background/line-simplify-algorithm: @admin-simplify-algorithm;
       line-join: bevel;
-      line-color: @admin-boundaries;
+      line-color: @admin-boundaries-low-zoom;
       line-width: 1.2;
       line-simplify: @admin-simplify;
       line-simplify-algorithm: @admin-simplify-algorithm;
@@ -37,7 +38,24 @@ overlapping borders correctly.
       background/line-width: 2;
       line-width: 2;
     }
+    [zoom >= 8] {
+      line-color: @admin-boundaries;
+      background/line-width: 3;
+      line-width: 3;
+    }
+    [zoom >= 9] {
+      background/line-width: 3.2;
+      line-width: 3.2;
+    }
     [zoom >= 10] {
+      background/line-width: 4;
+      line-width: 4;
+    }
+    [zoom >= 11] {
+      background/line-width: 5;
+      line-width: 5;
+    }
+    [zoom >= 12] {
       background/line-width: 6;
       line-width: 6;
     }

@@ -1,5 +1,5 @@
-@admin-boundaries: #646464;
-@admin-boundaries-low-zoom: #555555;
+@admin-boundaries: #50705a;
+@admin-boundaries-low-zoom: #445f4d;
 
 @admin-simplify: 4;
 @admin-simplify-algorithm: visvalingam-whyatt;

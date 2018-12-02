@@ -73,13 +73,11 @@
 @motorway-width-z9:               1.4;
 @trunk-width-z9:                  1.4;
 @primary-width-z9:                1.4;
-@secondary-width-z9:              1;
 
 @motorway-width-z10:              1.9;
 @trunk-width-z10:                 1.9;
 @primary-width-z10:               1.8;
 @secondary-width-z10:             1.1;
-@tertiary-width-z10:              0.7;
 
 @motorway-width-z11:              2.0;
 @trunk-width-z11:                 1.9;
@@ -1372,11 +1370,9 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
 
     [feature = 'highway_secondary'] {
-      [zoom >= 9][link != 'yes'],
       [zoom >= 10] {
         line-color: @unimportant-road;
-        line-width: @secondary-width-z9;
-        [zoom >= 10] { line-width: @secondary-width-z10; }
+        line-width: @secondary-width-z10;
         [zoom >= 11] { line-width: @secondary-width-z11; }
         [zoom >= 12] {
           line-color: @secondary-fill;
@@ -1426,12 +1422,9 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
 
     [feature = 'highway_tertiary'] {
-      [zoom >= 10] {
+      [zoom >= 11] {
         line-color: @unimportant-road;
-        line-width: @tertiary-width-z10;
-        [zoom >= 11] {
-          line-width: @tertiary-width-z11;
-        }
+        line-width: @tertiary-width-z11;
         [zoom >= 12] {
           line-color: @tertiary-fill;
           line-width: @tertiary-width-z12 - 2 * @casing-width-z12;

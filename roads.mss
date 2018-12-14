@@ -1921,9 +1921,12 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [feature = 'railway_rail'][zoom >= 8],
     [feature = 'railway_INT-spur-siding-yard'][zoom >= 13] {
       [zoom < 13] {
-        line-color: #787878;
-        line-width: 0.5;
-        [zoom >= 8] { line-width: 0.8; }
+        [zoom >= 8] {
+          line-width: 0.8; 
+          line-color: #a0a0a0;
+        }
+        [zoom >= 9] { line-color: #909090; }
+        [zoom >= 10] { line-color: #787878; }
         [zoom >= 12] { line-width: 0.9; }
         line-join: round;
         .roads_low_zoom[int_tunnel = 'yes'], #tunnels {

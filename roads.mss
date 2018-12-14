@@ -41,6 +41,7 @@
 @tertiary-shield: #3b3b3b;
 
 @unimportant-road: @residential-casing;
+@unimportant-road-z9: #c6c6c6;
 
 @residential-construction: #aaa;
 @service-construction: #aaa;
@@ -1374,9 +1375,12 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [feature = 'highway_secondary'] {
       [zoom >= 9][link != 'yes'],
       [zoom >= 10] {
-        line-color: @unimportant-road;
+        line-color: @unimportant-road-z9;
         line-width: @secondary-width-z9;
-        [zoom >= 10] { line-width: @secondary-width-z10; }
+        [zoom >= 10] {
+          line-color: @unimportant-road;
+          line-width: @secondary-width-z10;
+        }
         [zoom >= 11] { line-width: @secondary-width-z11; }
         [zoom >= 12] {
           line-color: @secondary-fill;

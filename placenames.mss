@@ -39,7 +39,6 @@
     text-halo-fill: @standard-halo-fill;
     text-halo-radius: @standard-halo-radius * 1.5;
     text-placement: interior;
-    text-character-spacing: 0.5;
   }
 }
 

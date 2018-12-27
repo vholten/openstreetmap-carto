@@ -177,6 +177,44 @@ regular text and can be used for emphasis. Fallback is a regular style.
                 @book-fonts;
 
 /*
+Medium text is heavier than regular text, but ligther than bold. 
+Fallback is a regular style.
+*/
+@medium-fonts:    "Noto Sans Medium",
+                  "Noto Sans CJK JP Medium",
+                  "Noto Sans Armenian Medium",
+                  "Noto Sans Bengali UI Medium",
+                  "Noto Sans Cham Medium",
+                  "Noto Sans Cherokee Medium",
+                  "Noto Sans Devanagari UI Medium",
+                  "Noto Sans Ethiopic Medium",
+                  "Noto Sans Georgian Medium",
+                  "Noto Sans Gujarati UI Medium",
+                  "Noto Sans Gurmukhi UI Medium",
+                  "Noto Sans Hebrew Medium",
+                  "Noto Sans Kannada UI Medium",
+                  "Noto Sans Khmer UI Medium",
+                  "Noto Sans Lao UI Medium",
+                  "Noto Sans Malayalam UI Medium",
+                  "Noto Sans Myanmar UI Medium",
+                  "Noto Sans Oriya UI Medium",
+                  "Noto Sans Sinhala UI Medium",
+                  "Noto Sans Sinhala Medium",
+                  "Noto Sans Symbols Medium",
+                  "Noto Sans Tamil UI Medium",
+                  "Noto Sans Telugu UI Medium",
+                  "Noto Sans Thaana Medium",
+                  "Noto Sans Thai UI Medium",
+                  "Noto Sans Tibetan Medium",
+
+                  "Noto Sans Arabic UI Medium",
+
+                  "Noto Naskh Arabic UI Medium",
+
+                  "DejaVu Sans Medium",
+
+                  @book-fonts;
+/*
 Italics are only available for the base font, not the other scripts.
 For a considerable number of labels this style will make no difference to the regular style.
 */
